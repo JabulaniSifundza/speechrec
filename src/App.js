@@ -37,7 +37,7 @@ const App = () => {
 			setAction(labels[argMax(Object.values(result.scores))]);
 			console.log(action);
 		},{includeSpectrogram: true, probabilityThreshold: 0.7})
-		setTimeout(()=> model.stopListening(), 10e3)
+		setTimeout(()=> model.stopListening(), 1000)
 	}
 
 
